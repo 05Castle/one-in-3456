@@ -1,0 +1,95 @@
+/* src/components/ItemButton.module.css */
+.slot {
+  width: 56px;
+  height: 56px;
+  background-color: #5a4a3a;
+  border: 2px solid #8b6914;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.slot:hover {
+  background-color: #6e5a45;
+}
+
+.slotEmpty {
+  width: 56px;
+  height: 56px;
+  background-color: #3a3028;
+  border: 2px dashed #5a4a3a;
+  border-radius: 4px;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  background-color: #5a4a3a;
+}
+
+.itemName {
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  word-break: keep-all;
+  padding: 2px;
+}
+
+/* 확인 팝업 */
+.confirmOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.confirmBox {
+  background-color: #2a2018;
+  border: 2px solid #8b6914;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.confirmMessage {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.confirmButtons {
+  display: flex;
+  gap: 12px;
+}
+
+.confirmYes {
+  padding: 8px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.confirmNo {
+  padding: 8px 24px;
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}

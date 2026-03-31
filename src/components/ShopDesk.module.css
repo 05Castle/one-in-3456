@@ -1,0 +1,28 @@
+/* src/components/ShopDesk.module.css */
+.shopDesk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 80px;
+  background-color: #5a4a3a;
+  border: 2px solid #8b6914;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.shopDesk:hover {
+  background-color: #6e5a45;
+}
+
+.shopIcon {
+  font-size: 24px;
+}
+
+.shopLabel {
+  font-size: 11px;
+  color: #fff;
+  margin-top: 4px;
+}

@@ -1,0 +1,29 @@
+/* src/components/Character.module.css */
+.character {
+  width: 32px;
+  height: 48px;
+  background-color: #4caf50; /* 임시 박스 색상 */
+  border-radius: 4px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.2s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* 나중에 스프라이트 교체 시
+.character {
+  width: 32px;
+  height: 48px;
+  background-image: url(/assets/character.png);
+  background-repeat: no-repeat;
+  animation: idle 0.6s steps(4) infinite;
+}
+
+@keyframes idle {
+  from { background-position: 0px; }
+  to   { background-position: -128px; }
+}
+*/

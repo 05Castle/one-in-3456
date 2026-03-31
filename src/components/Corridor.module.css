@@ -1,0 +1,26 @@
+/* src/components/Corridor.module.css */
+.corridor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+
+.wall {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  flex: 3;
+  background-color: #d4c5a9;
+}
+
+.floor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  flex: 1;
+  background-color: #a0998a;
+}

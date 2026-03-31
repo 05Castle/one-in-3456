@@ -1,0 +1,75 @@
+/* src/scenes/ClearScene.module.css */
+.scene {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1208;
+  gap: 32px;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.emoji {
+  font-size: 64px;
+}
+
+.title {
+  font-size: 28px;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.dialogue {
+  font-size: 16px;
+  color: #fff;
+  font-style: italic;
+}
+
+.record {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: #2a2018;
+  border: 2px solid #8b6914;
+  border-radius: 8px;
+  padding: 20px 32px;
+}
+
+.recordTitle {
+  font-size: 16px;
+  color: #ffd700;
+  margin-bottom: 8px;
+}
+
+.recordItem {
+  font-size: 14px;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 14px;
+  background-color: #5a4a3a;
+  color: #fff;
+  border: 2px solid #8b6914;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6e5a45;
+}

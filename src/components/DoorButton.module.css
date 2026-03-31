@@ -1,0 +1,54 @@
+/* src/components/DoorButton.module.css */
+.door {
+  position: relative;
+  width: 48px;
+  height: 72px;
+  border: 3px solid #5c4409;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.1s;
+}
+
+.door:hover {
+  filter: brightness(1.2);
+}
+
+/* 임시 색상 - 나중에 스프라이트로 교체 */
+.stairUp {
+  background-color: #4caf50; /* 초록: 위층 계단 */
+  border-color: #2e7d32;
+}
+
+.stairDown {
+  background-color: #2196f3; /* 파랑: 아래층 계단 */
+  border-color: #1565c0;
+}
+
+.elevator {
+  background-color: #f44336; /* 빨강: 엘리베이터 */
+  border-color: #b71c1c;
+}
+
+.revealed {
+  border-color: #ff4444;
+  outline: 2px solid #ff4444;
+}
+
+.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.doorNumber {
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.elevatorBadge {
+  font-size: 16px;
+}

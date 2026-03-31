@@ -1,0 +1,58 @@
+/* src/scenes/LeaderboardScene.module.css */
+.scene {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1208;
+  gap: 24px;
+}
+
+.title {
+  font-size: 28px;
+  color: #ffd700;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 2px solid #8b6914;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid #3a3028;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.tableHeader {
+  background-color: #2a2018;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 12px 32px;
+  font-size: 14px;
+  background-color: #5a4a3a;
+  color: #fff;
+  border: 2px solid #8b6914;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #6e5a45;
+}
