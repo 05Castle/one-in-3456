@@ -17,8 +17,10 @@ const Corridor = ({
     <div className={styles.corridor}>
       {/* 벽 영역 */}
       <div className={styles.wall}>
-        {/* 로비층일 때만 상점 */}
-        {isLobby && <ShopDesk />}
+        {/* 층수 표시 */}
+        <span className={styles.floorLabel}>
+          {isLobby ? 'LOBBY' : `${currentFloor}F`}
+        </span>
 
         {/* 문들 - 로비 포함 항상 표시 */}
         {doors.map((doorType, index) => (
@@ -35,6 +37,9 @@ const Corridor = ({
 
       {/* 바닥 영역 */}
       <div className={styles.floor}>
+        {/* 로비층일 때만 상점 */}
+        {isLobby && <ShopDesk />}
+
         <Character isHidden={isCharacterHidden} />
       </div>
     </div>

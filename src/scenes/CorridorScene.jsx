@@ -13,7 +13,6 @@ const CorridorScene = () => {
   const {
     currentFloor,
     doors,
-    coins,
     inventory,
     hasUsedItemThisFloor,
     revealedElevatorIndex,
@@ -116,14 +115,6 @@ const CorridorScene = () => {
 
   return (
     <div className={styles.scene}>
-      {/* 상단: 층수 표시 + 코인 */}
-      <div className={styles.header}>
-        <span className={styles.floorLabel}>
-          {isLobby ? 'LOBBY' : `${currentFloor}F`}
-        </span>
-        <span className={styles.coinDisplay}>🪙 {coins}</span>
-      </div>
-
       {/* 복도 */}
       <Corridor
         currentFloor={currentFloor}

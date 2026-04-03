@@ -25,6 +25,7 @@ const initialState = {
   revealedElevatorIndex: null,
   resetCount: 0,
   doorPickCount: 0,
+  characterSrc: '/assets/character_1_idle.gif', // 캐릭터 소스
 };
 
 const useGameStore = create((set, get) => ({

@@ -1,11 +1,9 @@
 /* src/components/Character.module.css */
 .character {
-  width: 32px;
-  height: 48px;
-  background-color: #4caf50; /* 임시 박스 색상 */
-  border-radius: 4px;
+  width: 160px;
+  height: 184px;
   position: absolute;
-  bottom: 0;
+  bottom: 120px;
   transition: opacity 0.2s;
 }
 
